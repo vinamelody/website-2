@@ -1,12 +1,12 @@
 import Head from 'next/head';
 import NavLink from '../components/NavLink';
+import { AboutPage } from '../data/seo.js'
+import { NextSeo } from 'next-seo'
 
-export default function Home() {
+export default function Home () {
   return (
     <div>
-      <Head>
-        <title>About | TechLadies</title>
-      </Head>
+      <NextSeo {...AboutPage} />
       <main>
         <div className="container py-6">
           <div className="row gy-6">
@@ -22,7 +22,7 @@ export default function Home() {
                 We create opportunities to increase women’s participation in tech
               </h1>
               <p className="mb-4 text-body large-line-height">
-                TechLadies is a community-led initiative for women to connect, learn, and grow in the tech industry as software engineers, product managers, data scientists, and UI/UX designers. 
+                TechLadies is a community-led initiative for women to connect, learn, and grow in the tech industry as software engineers, product managers, data scientists, and UI/UX designers.
               </p>
               <p className="mb-4 text-body large-line-height">
                 Our community is for women in tech and women keen in switching careers into tech.
@@ -52,7 +52,7 @@ export default function Home() {
                   As someone with no formal technical background, Elisha Tan learned to code from the developer community. Being a minority in tech, she wondered if women had adequate opportunities to explore the industry.
                 </p>
                 <p>
-                  That’s why she started TechLadies in 2016, to provide a space where women can learn technical skills and switch careers into the tech industry. 
+                  That’s why she started TechLadies in 2016, to provide a space where women can learn technical skills and switch careers into the tech industry.
                 </p>
               </div>
             </div>
@@ -129,8 +129,8 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            
-            
+
+
             <div className="col-lg-4 col-md-6">
               <div className="card">
                 <div className="card-body card-body-sm">
@@ -204,7 +204,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            
+
           </div>
         </div>
         <div className="container py-6">

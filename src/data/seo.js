@@ -25,6 +25,24 @@ const Bootcamp6PageSeo = {
   }
 }
 
+const AboutPage = {
+  ...seo,
+  title: "About TechLadies",
+  description: "",
+  openGraph: {
+    ...requiredOpenGraphProperties,
+    title: "About TechLadies",
+    url: "https://techladies.co/about/",
+    images: [
+      {
+        url: "https://techladies.co/photos/bootcamp_stage.jpg",
+        alt: "TechLadies about"
+      },
+    ]
+  }
+}
+
 export {
-  Bootcamp6PageSeo
+  Bootcamp6PageSeo,
+  AboutPage
 }
